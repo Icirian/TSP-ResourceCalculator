@@ -157,6 +157,9 @@ class MyWindow:
         steel += 10 * buggy
         ti_ing += 2 * buggy
         # truck
+        steel += 20*truck
+        ti_ing += 5*truck
+        graphene += 5*truck
 
         # Credit
         gold_ing += credit / 150
@@ -183,7 +186,7 @@ class MyWindow:
         # Basic Material
         steel += bas_mat * 3
         silicate += bas_mat * 5
-        ti_ing = bas_mat
+        ti_ing += bas_mat
         # Basic Tools
         steel += 2 * bas_tool
         graphene += 2 * bas_tool
@@ -218,6 +221,9 @@ class MyWindow:
         self.tTiIngot.delete(0, 'end')
         self.tSilicon.delete(0, 'end')
         self.tGoldBar.delete(0, 'end')
+        self.tTitaniumAlloy.delete(0, 'end')
+        self.tBasicMaterial.delete(0, 'end')
+        self.tBasicTools.delete(0, 'end')
 
         self.tIron.insert(0, str(iron))
         self.tCarbon.insert(0, str(carbon))
@@ -230,6 +236,9 @@ class MyWindow:
         self.tTiIngot.insert(0, str(ti_ing))
         self.tSilicon.insert(0, str(silicon))
         self.tGoldBar.insert(0, str(gold_ing))
+        self.tTitaniumAlloy.insert(0, str(ti_al))
+        self.tBasicMaterial.insert(0,str(bas_mat))
+        self.tBasicTools.insert(0, str(bas_tool))
 
     def rst(self):
         self.tAdvTools.delete(0, 'end')
