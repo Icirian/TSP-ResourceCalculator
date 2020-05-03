@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+<style>
+.button {
+  display: inline-block;
+  padding: 10px 10px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: #3e8e41;
+  transform: translateY(4px);
+}
+input[type=int]:focus {
+  border: 1px solid #555;
+}
+
+</style>
+<body>
+
+<table style="border-collapse: collapse; width: 100%; margin-left: auto; margin-right: auto;" border="1">
+<tbody>
+<tr style="height: 20px;">
+<td style="width: 14.9592%; height: 20px; text-align: center;">Advance Material</td>
+<td style="width: 14.7909%; height: 20px; text-align: center;">Advance Tool</td>
+<td style="width: 13.1072%; height: 20px; text-align: center;">Rover</td>
+<td style="width: 14.2857%; height: 20px; text-align: center;">Buggy</td>
+<td style="width: 14.2857%; height: 20px; text-align: center;">Truck</td>
+<td style="width: 5.53149%; height: 200px; text-align: center;" rowspan="10"></td>
+<td style="width: 14.6225%; height: 20px; text-align: center;">Credit</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 14.9592%; text-align: center; height: 20px;"><form><input type="text" id="adv_mat" name="adv_mat" value ="0"></form></td>
+<td style="width: 14.7909%; text-align: center; height: 20px;"><form><input type="text" id="adv_tool" name="adv_tool" value ="0"></form></td>
+<td style="width: 13.1072%; text-align: center; height: 20px;"><form><input type="text" id="rover" name="rover" value ="0"></form></td>
+<td style="width: 14.2857%; text-align: center; height: 20px;"><form><input type="text" id="buggy" name="buggy" value ="0"></form></td>
+<td style="width: 14.2857%; text-align: center; height: 20px;"><form><input type="text" id="truck" name="truck" value ="0"></form></td>
+<td style="width: 14.6225%; text-align: center; height: 20px;"><form><input type="text" id="credit" name="credit" value ="0"></form></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 14.9592%; height: 20px; text-align: center;">Basic Material</td>
+<td style="width: 14.7909%; height: 20px; text-align: center;">Basic Tool</td>
+<td style="width: 13.1072%; height: 20px; text-align: center;">Titanium Alloy</td>
+<td style="width: 14.2857%; height: 20px; text-align: center;">Repair Tools</td>
+<td style="width: 14.2857%; height: 20px; text-align: center;">Mining Tools</td>
+<td style="width: 14.6225%; height: 20px; text-align: center;">Arrow_1</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 14.9592%; text-align: center; height: 20px;"><form><input type="text" id="bas_mat" name="bas_mat" value ="0"></form></td>
+<td style="width: 14.7909%; text-align: center; height: 20px;"><form><input type="text" id="bas_tool" name="bas_tool" value ="0"></form></td>
+<td style="width: 13.1072%; text-align: center; height: 20px;"><form><input type="text" id="ti_al" name="ti_al" value ="0"></form></td>
+<td style="width: 14.2857%; text-align: center; height: 20px;"><form><input type="text" id="repair" name="repair" value ="0"></form></td>
+<td style="width: 14.2857%; text-align: center; height: 20px;"><form><input type="text" id="mining" name="mining" value ="0"></form></td>
+<td style="width: 14.6225%; height: 20px; text-align: center;">Gold Ingot</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 14.9592%; height: 20px; text-align: center;">Steel</td>
+<td style="width: 14.7909%; height: 20px; text-align: center;">Graphene</td>
+<td style="width: 13.1072%; height: 20px; text-align: center;">Titanium Ingot</td>
+<td style="width: 14.2857%; height: 20px; text-align: center;">Silicon</td>
+<td style="width: 14.2857%; height: 20px; text-align: center;">Fuel</td>
+<td style="width: 14.6225%; height: 20px; text-align: center;"><form><input type="text" id="gold_ing" name="gold_ing" value ="0"></form></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 14.9592%; text-align: center; height: 20px;"><form><input type="text" id="steel" name="steel" value ="0"></form></td>
+<td style="width: 14.7909%; text-align: center; height: 20px;"><form><input type="text" id="graphene" name="graphene" value ="0"></form></td>
+<td style="width: 13.1072%; text-align: center; height: 20px;"><form><input type="text" id="ti_ing" name="ti_ing" value ="0"></form></td>
+<td style="width: 14.2857%; text-align: center; height: 20px;"><form><input type="text" id="silicon" name="silicon" value ="0"></form></td>
+<td style="width: 14.2857%; text-align: center; height: 20px;"><form><input type="text" id="fuel" name="fuel" value ="0"></form></td>
+<td style="width: 14.6225%; text-align: center; height: 20px;">Arrow_2</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 14.9592%; text-align: center; height: 20px;">Iron</td>
+<td style="width: 14.7909%; text-align: center; height: 20px;">Carbon</td>
+<td style="width: 13.1072%; text-align: center; height: 20px;">Titanium</td>
+<td style="width: 14.2857%; text-align: center; height: 20px;">Silicate</td>
+<td style="width: 14.2857%; text-align: center; height: 20px;">Water</td>
+<td style="width: 14.6225%; text-align: center; height: 20px;">Gold</td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 14.9592%; text-align: center; height: 20px;"><input type="text" id="iron" name="iron" value ="0"></td>
+<td style="width: 14.7909%; text-align: center; height: 20px;"><form><input type="text" id="carbon" name="carbon" value ="0"></form></td>
+<td style="width: 13.1072%; text-align: center; height: 20px;"><form><input type="text" id="titanium" name="titanium" value ="0"></form></td>
+<td style="width: 14.2857%; text-align: center; height: 20px;"><form><input type="text" id="silicate" name="silicate" value ="0"></form></td>
+<td style="width: 14.2857%; text-align: center; height: 20px;"><form><input type="text" id="water" name="water" value ="0"></form></td>
+<td style="width: 14.6225%; text-align: center; height: 20px;"><form><input type="text" id="gold" name="gold" value ="0"></form></td>
+</tr>
+<tr style="text-align: center;">
+<td style="width: 71.4287%; height: 20px; text-align: center;" colspan="5"></td>
+<td style="width: 14.6225%; height: 20px; text-align: center;"></td>
+</tr>
+<tr style="height: 20px;">
+<td style="width: 14.9592%; text-align: center; height: 20px;"></td>
+<td style="width: 14.7909%; text-align: center; height: 20px;"><button class="button"
+onclick="calculate()">Calculate</button></td>
+<td style="width: 13.1072%; text-align: center; height: 20px;"></td>
+<td style="width: 14.2857%; text-align: center; height: 20px;"><button class="button"
+onclick="reset()">Reset</button></td>
+<td style="width: 14.2857%; text-align: center; height: 20px;"></td>
+<td style="width: 14.6225%; text-align: center; height: 20px;"></td>
+</tr>
+</tbody>
+</table>
+
+<script>
+function calculate() {
+// Declare Variables
+var adv_mat = parseInt(document.getElementById("adv_mat").value);
+var adv_tool = parseInt(document.getElementById("adv_tool").value);
+var rover = parseInt(document.getElementById("rover").value);
+var buggy = parseInt(document.getElementById("buggy").value);
+var truck = parseInt(document.getElementById("truck").value);
+var bas_mat = parseInt(document.getElementById("bas_mat").value);
+var bas_tool = parseInt(document.getElementById("bas_tool").value);
+var ti_al = parseInt(document.getElementById("ti_al").value);
+var repair = parseInt(document.getElementById("repair").value);
+var min_tool = parseInt(document.getElementById("mining").value);
+var steel = parseInt(document.getElementById("steel").value);
+var graphene = parseInt(document.getElementById("graphene").value);
+var ti_ing = parseInt(document.getElementById("ti_ing").value);
+var silicon = parseInt(document.getElementById("silicon").value);
+var fuel = parseInt(document.getElementById("fuel").value);
+var credit = parseInt(document.getElementById("credit").value);
+var gold_ing = parseInt(document.getElementById("gold_ing").value);
+var iron = carbon = titanium = silicate = water = gold = 0
+
+// Product
+// rover
+steel += 5 * rover;
+// buggy
+steel += 10 * buggy; ti_ing += 2 * buggy;
+// truck
+steel += 20*truck; ti_ing += 5*truck; graphene += 5*truck;
+
+// credit
+gold_ing += credit / 150; gold += gold_ing * 5;
+
+// tier 3 relation
+// adv_mat
+bas_mat += adv_mat; graphene += adv_mat * 2; ti_al += adv_mat * 3;
+// adv_tool
+bas_tool += adv_tool; graphene += adv_tool * 2; ti_al += adv_tool;
+
+// tier_2 relation
+// repair
+steel += repair; ti_ing += repair; silicon += repair;
+// titanium Alloy
+steel += ti_al; ti_ing += ti_al; silicon += ti_al;
+// Basic Material
+steel += bas_mat * 3; silicate += bas_mat * 5; ti_ing += bas_mat;
+// Basic Tools
+steel += 2 * bas_tool; graphene += 2 * bas_tool; ti_ing += bas_tool;
+// mining tools
+steel += 3 * min_tool; graphene += min_tool; ti_ing += min_tool;
+
+// tier_1 relation
+// Steel
+iron += steel * 5; carbon += steel;
+// Graphene
+carbon += graphene * 5;
+// Titanium ingot
+titanium += ti_ing * 5;
+// Silicon
+silicate += silicon * 5;
+// Fuel
+water += fuel * 2; carbon += fuel * 2;
+
+//Value Report
+document.getElementById("iron").value= iron; 
+document.getElementById("carbon").value= carbon; 
+document.getElementById("titanium").value= titanium; 
+document.getElementById("silicate").value= silicate; 
+document.getElementById("water").value= water; 
+document.getElementById("steel").value= steel;
+document.getElementById("graphene").value= graphene; 
+document.getElementById("ti_ing").value= ti_ing; 
+document.getElementById("silicon").value= silicon; 
+document.getElementById("fuel").value= fuel;
+document.getElementById("bas_mat").value= bas_mat; 
+document.getElementById("bas_tool").value= bas_tool; 
+document.getElementById("ti_al").value= ti_al; 
+document.getElementById("repair").value= repair; 
+document.getElementById("mining").value= min_tool; 
+document.getElementById("gold_ing").value= gold_ing; 
+document.getElementById("gold").value= gold; 
+
+}
+
+function reset() {
+document.getElementById("iron").value= 0; 
+document.getElementById("carbon").value= 0; 
+document.getElementById("titanium").value= 0; 
+document.getElementById("silicate").value= 0; 
+document.getElementById("water").value= 0; 
+document.getElementById("steel").value= 0;
+document.getElementById("graphene").value= 0; 
+document.getElementById("ti_ing").value= 0; 
+document.getElementById("silicon").value= 0; 
+document.getElementById("fuel").value= 0;
+document.getElementById("bas_mat").value= 0; 
+document.getElementById("bas_tool").value= 0; 
+document.getElementById("ti_al").value= 0; 
+document.getElementById("repair").value= 0; 
+document.getElementById("mining").value= 0;
+document.getElementById("adv_mat").value= 0; 
+document.getElementById("adv_tool").value= 0; 
+document.getElementById("rover").value= 0; 
+document.getElementById("buggy").value= 0; 
+document.getElementById("truck").value= 0;
+document.getElementById("gold_ing").value= 0; 
+document.getElementById("gold").value= 0;
+}
+</script>
+</body>
+</html>
